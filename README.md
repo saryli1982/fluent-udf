@@ -28,7 +28,7 @@ procedure are detailed below.
 
 ## `UDF` directory tree
 
-The directory three for the generation of the `UDF` library is shown
+The directory tree for the generation of the `UDF` library is shown
 here, a simple description of the content of each folder is presented.
 
 ```text

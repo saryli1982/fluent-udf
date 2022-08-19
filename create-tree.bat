@@ -13,13 +13,14 @@ md win64
 
 :: Create the directories for all versions.
 cd win64
-set versions = 2d 3d
-set parallel_versions = _host _node
-:: Optimize this loop later
+set "dimensions=2d 3d"
+set "parallel_versions=_host _node"
+
+:: Loop to create folder
 (for %%d in (%dimensions%) do ( 
-    md %%d 
+    md %%d
     (for %%p in (%parallel_versions%) do ( 
-	    md %%d%%parallel
+	    md %%d%%p
 	))
     md %%ddp
     (for %%p in (%parallel_versions%) do ( 
